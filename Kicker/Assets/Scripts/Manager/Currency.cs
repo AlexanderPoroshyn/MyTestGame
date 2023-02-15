@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Currency : MonoBehaviour
 {
-    private int money = 30;
+    [SerializeField] private int money = 30;
     public event Action OnMoneyCountChenged;
 
     public void AddMoney(int countMoney)

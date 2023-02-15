@@ -71,6 +71,21 @@ TextureImporter:
   - first:
       213: -1593181495891750425
     second: CardDeselector
+  - first:
+      213: 522363302556099600
+    second: ArrowUpLeft
+  - first:
+      213: -2008256991656457535
+    second: ArrowUpRight
+  - first:
+      213: 4122864462845766232
+    second: ArrowDownRight
+  - first:
+      213: 5277720500845003187
+    second: ArrowDownLeft
+  - first:
+      213: 2447547489431836402
+    second: CellV2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -768,7 +783,7 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -776,6 +791,111 @@ TextureImporter:
       bones: []
       spriteID: 7e195aaded1e3e9e0800000000000000
       internalID: -1593181495891750425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArrowUpLeft
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0146e84f7aecf3700800000000000000
+      internalID: 522363302556099600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArrowUpRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca4f9208ec3124e0800000000000000
+      internalID: -2008256991656457535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArrowDownRight
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ae005926b573930800000000000000
+      internalID: 4122864462845766232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArrowDownLeft
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1c9ac35da3e3940800000000000000
+      internalID: 5277720500845003187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CellV2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 56
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6db76597f67f120800000000000000
+      internalID: 2447547489431836402
       vertices: []
       indices: 
       edges: []

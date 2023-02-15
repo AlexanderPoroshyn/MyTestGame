@@ -26,10 +26,10 @@ public class AllyCreator : MonoBehaviour
 
         if (isCanCreate == true && allyData != null)
         {
-            if (allyData.price <= currency.GetMoney())
+            if (allyData.Price <= currency.GetMoney())
             {
-                currency.RemoveMoney(allyData.price);
-                Ally createdAlly = Instantiate(allyData.ally, position, Quaternion.identity);
+                currency.RemoveMoney(allyData.Price);
+                Ally createdAlly = Instantiate(allyData.Ally, position, Quaternion.identity);
 
                 accumulationAllies.AddCharacter(createdAlly);
             }

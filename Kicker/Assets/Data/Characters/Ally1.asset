@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a4bddfe65d138e4e9fa366572f7bc6c, type: 3}
   m_Name: Ally1
   m_EditorClassIdentifier: 
-  ally: {fileID: 2052119407016121998, guid: bc6703a44c84a2345a1d2c2dda6ead4f, type: 3}
-  price: 10
+  Ally: {fileID: 2052119407016121998, guid: bc6703a44c84a2345a1d2c2dda6ead4f, type: 3}
+  AllyBigSprite: {fileID: 3542127132570728493, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
+  Background: {fileID: -1960546628078278901, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
+  SuperpowerIcon: {fileID: -532960962129546369, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
+  Health: 1
+  Damage: 1
+  Price: 15

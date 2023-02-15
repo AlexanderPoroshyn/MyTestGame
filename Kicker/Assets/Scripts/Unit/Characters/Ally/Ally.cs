@@ -31,17 +31,17 @@ public class Ally : Character, IPointerClickHandler
 
     public void Select()
     {
-        CancelAllyAction();
+        StopShowPointsAction();
         SetActiveActionButtons(true);
     }
 
     public void Deselect()
     {
-        CancelAllyAction();
+        StopShowPointsAction();
         SetActiveActionButtons(false);
     }
 
-    private void CancelAllyAction()
+    private void StopShowPointsAction()
     {
         if (allyAction != null)
         {
@@ -51,11 +51,24 @@ public class Ally : Character, IPointerClickHandler
 
     private void SelectedAction(AllyAction allyAction)
     {
+        if(this.allyAction != null)
+        {
+            DeselectedAction();
+        }
+
         SetActiveActionButtons(false);
         allyAction.AllowAction();
         allyAction.OnStartedAction += StartAction;
         allyAction.OnFinishedAction += FinishAction;
         this.allyAction = allyAction;
+    }
+
+    private void DeselectedAction()
+    {
+        allyAction.OnStartedAction -= StartAction;
+        allyAction.OnFinishedAction -= FinishAction;
+
+        allyAction = null;
     }
 
     private void StartAction()
@@ -66,8 +79,7 @@ public class Ally : Character, IPointerClickHandler
 
     private void FinishAction()
     {
-        allyAction.OnStartedAction -= StartAction;
-        allyAction.OnFinishedAction -= FinishAction;
+        DeselectedAction();
         isAction = false;
     }
 

@@ -3,15 +3,37 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(Image))]
 public class Card : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private AllyData ally;
 
     public event Action<Card> OnClicked;
 
-    private Image image => GetComponent<Image>();
+    [SerializeField] private Image allySprite;
+    [SerializeField] private Image background;
+    [SerializeField] private Image superpower;
+
+    [SerializeField] private Material simpleSprite, greySprite;
+
+    [SerializeField] private Animator animator;
+
+    [SerializeField] private Text price;
+    [SerializeField] private Text health, damage;
+
     private CardState state = CardState.Blocked;
+
+    private void Awake()
+    {
+        allySprite.sprite = ally.AllyBigSprite;
+        background.sprite = ally.Background;
+
+        superpower.sprite = ally.SuperpowerIcon;
+
+        price.text = ally.Price + "";
+
+        health.text = ally.Health + "";
+        damage.text = ally.Damage + "";
+    }
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -23,7 +45,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
 
     public void UpdateState(AllyData selectedAlly, int countMoney)
     {
-        if (countMoney >= ally.price)
+        if (countMoney >= ally.Price)
         {
             state = CardState.Simple;
             if (selectedAlly == ally)
@@ -48,15 +70,25 @@ public class Card : MonoBehaviour, IPointerClickHandler
         switch (state)
         {
             case CardState.Blocked:
-                image.color = new Color(0.2f, 0.2f, 0.2f);
+                ChangeView(greySprite, "Deselected", Color.red);
                 break;
             case CardState.Selected:
-                image.color = new Color(0.5f, 0.5f, 0.5f);
+                ChangeView(simpleSprite, "Selected", Color.white);
                 break;
             case CardState.Simple:
-                image.color = new Color(1f, 1f, 1f);
+                ChangeView(simpleSprite, "Deselected", Color.white);
                 break;
         }
+    }
+
+    private void ChangeView(Material material, string animationName, Color color)
+    {
+        allySprite.material = material;
+        background.material = material;
+
+        animator.Play(animationName);
+
+        price.color = color;
     }
 
     private enum CardState
