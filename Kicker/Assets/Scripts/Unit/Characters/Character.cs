@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterHealth))]
 public abstract class Character : MonoBehaviour
 {
     public event Action<Character> OnDied;

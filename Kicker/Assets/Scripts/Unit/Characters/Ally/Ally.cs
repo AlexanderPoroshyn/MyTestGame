@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(CharacterHealth))]
 public class Ally : Character, IPointerClickHandler
 {
     private bool isAction = false;

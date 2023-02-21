@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterHealth))]
 public class Enemy : Character
 {
     [SerializeField] private int countSteps;

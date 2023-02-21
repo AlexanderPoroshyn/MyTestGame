@@ -9,6 +9,8 @@ public class CharacterMover : MonoBehaviour
     private float offsetX, offsetY;
     private Vector2 destination;
 
+    [SerializeField] private GameObject color;
+
     private BoxCollider2D boxCollider2D => movableOject.GetComponent<BoxCollider2D>();
 
     public event Action OnFinishedMove;
@@ -24,6 +26,7 @@ public class CharacterMover : MonoBehaviour
         if (isCanMove == true)
         {
             movableOject.transform.position = Vector2.MoveTowards(movableOject.transform.position, destination, Time.fixedDeltaTime * speed);
+            color.transform.position = destination;
             ChangePositionCollider();
 
             if (movableOject.transform.position.x == destination.x && movableOject.transform.position.y == destination.y)

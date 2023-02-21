@@ -7,11 +7,6 @@ public class CharacterHealth : MonoBehaviour
     public event Action OnDied;
     public event Action<int> OnChangedHealth;
 
-    private void Start()
-    {
-        OnChangedHealth?.Invoke(health);
-    }
-
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -19,6 +14,12 @@ public class CharacterHealth : MonoBehaviour
         {
             OnDied?.Invoke();
         }
+        OnChangedHealth?.Invoke(health);
+    }
+
+    public void SetHealth(int newHealth)
+    {
+        health = newHealth;
         OnChangedHealth?.Invoke(health);
     }
 }
