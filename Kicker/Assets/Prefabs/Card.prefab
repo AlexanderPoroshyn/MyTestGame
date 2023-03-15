@@ -95,7 +95,7 @@ Canvas:
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
+  m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 137059255
@@ -196,7 +196,7 @@ Canvas:
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
+  m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 137059255
@@ -293,7 +293,7 @@ Canvas:
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
+  m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 137059255
@@ -334,7 +334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 17}
+  m_AnchoredPosition: {x: 0, y: 14.42}
   m_SizeDelta: {x: 260, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7850812273487550705
@@ -367,10 +367,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b159e98469681164e9e5f87f8ef51ae6, type: 3}
-    m_FontSize: 85
+    m_FontSize: 64
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 9
+    m_MinSize: 6
     m_MaxSize: 111
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -394,7 +394,7 @@ Canvas:
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
+  m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 137059255
@@ -527,7 +527,7 @@ RectTransform:
   m_GameObject: {fileID: 4341968572545839978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.58, y: 0.58, z: 1}
   m_Children: []
   m_Father: {fileID: 2339202117700502515}
   m_RootOrder: 1
@@ -535,7 +535,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 26, y: 32}
+  m_SizeDelta: {x: 39, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7548605155741629556
 CanvasRenderer:
@@ -590,7 +590,7 @@ Canvas:
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
+  m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 137059255
@@ -687,7 +687,7 @@ Canvas:
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 1
-  m_OverridePixelPerfect: 1
+  m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 137059255

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2284357272155523818}
   - component: {fileID: 656584082525927396}
   m_Layer: 8
-  m_Name: ExplosionFromEnemy
+  m_Name: EnemyD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 12747527
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -3519745679901737596, guid: 94ce3093da3c14e48b7f59d5065dcc58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

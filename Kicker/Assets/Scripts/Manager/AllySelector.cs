@@ -15,6 +15,8 @@ public class AllySelector : MonoBehaviour
     [SerializeField] private int stepsCount;
     private int stepsCountLeft;
 
+    private string[] layerNames = new string[] { "Ally", "AllyButton" };
+
     private void Awake()
     {
         accumulationAllies.OnChangentCountCharacters += UpdateAllies;
@@ -59,7 +61,6 @@ public class AllySelector : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            string[] layerNames = new string[] { "Ally", "AllyButton" };
             if (MousePositionInLayerCheker.CheckMousePosition(layerNames) != true)
             {
                 Select(null);

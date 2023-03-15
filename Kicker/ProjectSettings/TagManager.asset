@@ -38,9 +38,27 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 482197409
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
+  - name: Cells
+    uniqueID: 4269489713
+    locked: 0
+  - name: Characters
+    uniqueID: 3913689093
+    locked: 0
+  - name: Effects
+    uniqueID: 12747527
+    locked: 0
+  - name: Foreground
+    uniqueID: 2002577511
+    locked: 0
+  - name: GameplayUI
+    uniqueID: 1266775849
+    locked: 0
+  - name: MainUI
     uniqueID: 137059255
     locked: 0

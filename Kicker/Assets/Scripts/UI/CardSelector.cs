@@ -6,6 +6,8 @@ public class CardSelector : MonoBehaviour
     [SerializeField] private Card[] cards;
     private AllyData selectedAlly;
 
+    private string[] layerNames = new string[] { "SpawnCellAlly", "Card" };
+
     private void Awake()
     {
         for (int i = 0; i < cards.Length; i++)
@@ -48,7 +50,6 @@ public class CardSelector : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            string[] layerNames = new string[] { "SpawnCellAlly", "Card" };
             if (MousePositionInLayerCheker.CheckMousePosition(layerNames) != true)
             {
                 Deselect();

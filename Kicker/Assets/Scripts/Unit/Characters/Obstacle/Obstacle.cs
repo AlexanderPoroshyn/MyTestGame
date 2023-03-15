@@ -5,6 +5,7 @@ public class Obstacle : Character
 {
     private int health;
     private int spriteNumber;
+    private int chanceTurn;
 
     [SerializeField] private Sprite[] sprites;
     private SpriteRenderer spriteRenderer => GetComponent<SpriteRenderer>();
@@ -14,10 +15,21 @@ public class Obstacle : Character
         SubscribeEvents();
 
         health = Random.Range(1, 7);
-        spriteNumber = Random.Range(0, sprites.Length);
-
         characterHealth.SetHealth(health);
+
+        SetView();
+    }
+
+    private void SetView()
+    {
+        spriteNumber = Random.Range(0, sprites.Length);
         spriteRenderer.sprite = sprites[spriteNumber];
+
+        chanceTurn = Random.Range(0, 2);
+        if(chanceTurn == 1)  
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 
     protected override void Die()

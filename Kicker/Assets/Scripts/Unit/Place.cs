@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public class PlaceChecker : MonoBehaviour
+public class Place : MonoBehaviour
 {
-    public PlaceType GetPlace()
+    private Vector2 raycastPosition;
+    
+    public PlaceType GetPlace(Vector2 checkPosition)
     {
-        if(RaycastHit("Ally") == true)
+        raycastPosition = checkPosition;
+        if (RaycastHit("Ally") == true)
         {
             return PlaceType.Ally;
         }
@@ -16,6 +19,14 @@ public class PlaceChecker : MonoBehaviour
         {
             return PlaceType.Obstacle;
         }
+        if (RaycastHit("SpawnCellAlly") == true)
+        {
+            return PlaceType.SpawnCellAlly;
+        }
+        if (RaycastHit("SpawnCellEnemy") == true)
+        {
+            return PlaceType.SpawnCellEnemy;
+        }
         if (RaycastHit("Cell") == true)
         {
             return PlaceType.Cell;
@@ -25,7 +36,7 @@ public class PlaceChecker : MonoBehaviour
 
     private bool RaycastHit(string layerName)
     {
-        return Physics2D.Raycast(transform.position, Vector2.zero, 10f, LayerMask.GetMask(layerName));
+        return Physics2D.Raycast(raycastPosition, Vector2.zero, 10f, LayerMask.GetMask(layerName));
     }
 
     public enum PlaceType
@@ -34,6 +45,8 @@ public class PlaceChecker : MonoBehaviour
         Ally,
         Obstacle,
         Enemy,
+        SpawnCellAlly,
+        SpawnCellEnemy,
         None
     }
 }

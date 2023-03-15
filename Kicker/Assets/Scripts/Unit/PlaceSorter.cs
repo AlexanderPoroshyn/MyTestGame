@@ -1,17 +1,17 @@
 using UnityEngine;
 
-[RequireComponent(typeof(PlaceChecker))]
+[RequireComponent(typeof(Place))]
 public class PlaceSorter : MonoBehaviour
 {
-    private PlaceChecker placeChecker => GetComponent<PlaceChecker>();
+    private Place place => GetComponent<Place>();
 
-    [SerializeField] private PlaceChecker.PlaceType[] allowedPlaces;
+    [SerializeField] private Place.PlaceType[] allowedPlaces;
 
     public bool CheckRequirements()
     {
         for (int i = 0; i < allowedPlaces.Length; i++)
         {
-            if (allowedPlaces[i] == placeChecker.GetPlace())
+            if (allowedPlaces[i] == place.GetPlace(transform.position))
             {
                 return true;
             }

@@ -2,20 +2,18 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+[RequireComponent(typeof(PlaceSorter))]
 public class SpawnCellAlly : MonoBehaviour, IPointerClickHandler
 {
     public event Action<Vector2> OnClicked;
 
+    private PlaceSorter placeSorter => GetComponent<PlaceSorter>();
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (isCanSpawn("Ally") == true)
+        if (placeSorter.CheckRequirements())
         {
             OnClicked?.Invoke(transform.position);
         }
-    }
-
-    private bool isCanSpawn(string layerName)
-    {
-        return !Physics2D.Raycast(transform.position, Vector2.zero, 10f, LayerMask.GetMask(layerName));
     }
 }
