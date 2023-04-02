@@ -6,6 +6,7 @@ public class Obstacle : Character
     private int health;
     private int spriteNumber;
     private int chanceTurn;
+    [SerializeField] private int minHealth, maxHealth;
 
     [SerializeField] private Sprite[] sprites;
     private SpriteRenderer spriteRenderer => GetComponent<SpriteRenderer>();
@@ -14,7 +15,7 @@ public class Obstacle : Character
     {
         SubscribeEvents();
 
-        health = Random.Range(1, 7);
+        health = Random.Range(minHealth, maxHealth + 1);
         characterHealth.SetHealth(health);
 
         SetView();

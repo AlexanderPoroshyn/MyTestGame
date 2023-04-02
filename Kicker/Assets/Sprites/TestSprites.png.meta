@@ -40,7 +40,7 @@ TextureImporter:
     second: TestEnemy2
   - first:
       213: -1591809835906518857
-    second: TestCard1
+    second: WhiteBlock
   - first:
       213: -2240062555310645463
     second: TestCard2
@@ -580,13 +580,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TestCard1
+      name: WhiteBlock
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
-        width: 24
-        height: 32
+        x: 1
+        y: 247
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -898,8 +898,8 @@ TextureImporter:
       name: CellV2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 56
+        x: 96
+        y: 24
         width: 24
         height: 24
       alignment: 0
@@ -940,7 +940,7 @@ TextureImporter:
       name: CellEnemy
       rect:
         serializedVersion: 2
-        x: 112
+        x: 96
         y: 56
         width: 24
         height: 24
@@ -1004,11 +1004,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 32
+        y: 24
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
