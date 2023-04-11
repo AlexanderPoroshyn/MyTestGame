@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ally: {fileID: 2052119407016121998, guid: 25663c38ab0c7bd4b91dda3bca4c8e65, type: 3}
   AllyBigSprite: {fileID: -7914586359189542566, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
-  Background: {fileID: -1960546628078278901, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
+  Background: {fileID: -6512646546361950438, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
   SuperpowerIcon: {fileID: -532960962129546369, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
+  PatternMove: {fileID: -7158186759546396209, guid: 94ce3093da3c14e48b7f59d5065dcc58, type: 3}
+  PatternAttack: {fileID: 6737731243287552735, guid: 94ce3093da3c14e48b7f59d5065dcc58, type: 3}
   Health: 3
   Damage: 1
   Price: 40

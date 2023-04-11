@@ -224,6 +224,12 @@ TextureImporter:
   - first:
       213: 2767305321423095372
     second: TrafficLightTrain
+  - first:
+      213: 4604917529289120559
+    second: ArmoredCar1
+  - first:
+      213: -3407728910805621018
+    second: ArmoredCar2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1886,6 +1892,48 @@ TextureImporter:
       bones: []
       spriteID: c46c87c2781776620800000000000000
       internalID: 2767305321423095372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredCar1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b5f315814f7ef30800000000000000
+      internalID: 4604917529289120559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArmoredCar2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e62a9c4c9055b0d0800000000000000
+      internalID: -3407728910805621018
       vertices: []
       indices: 
       edges: []

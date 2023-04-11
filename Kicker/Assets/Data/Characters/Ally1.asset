@@ -16,6 +16,8 @@ MonoBehaviour:
   AllyBigSprite: {fileID: 3542127132570728493, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
   Background: {fileID: -1960546628078278901, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
   SuperpowerIcon: {fileID: -532960962129546369, guid: 5d86881eb2d0fed43a9fa2419cdb7114, type: 3}
+  PatternMove: {fileID: -6481781511903814279, guid: 94ce3093da3c14e48b7f59d5065dcc58, type: 3}
+  PatternAttack: {fileID: 6716770598830782548, guid: 94ce3093da3c14e48b7f59d5065dcc58, type: 3}
   Health: 1
   Damage: 1
   Price: 15

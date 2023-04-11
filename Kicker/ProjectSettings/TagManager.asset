@@ -19,8 +19,8 @@ TagManager:
   - SpawnCellEnemy
   - Card
   - DistortionEffect
-  - 
-  - 
+  - MapPoint
+  - MapPointForSelect
   - 
   - 
   - 
