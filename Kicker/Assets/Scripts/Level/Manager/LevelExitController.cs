@@ -5,6 +5,9 @@ public class LevelExitController : MonoBehaviour
 {
     [SerializeField] private GameObject blackScreen;
 
+    [SerializeField] private Animator victoryEffect;
+    [SerializeField] private Animator defeatEffect;
+
     public void ExitLevelSimple()
     {
         Invoke(nameof(ActivateBlackScreen), 0f);
@@ -13,14 +16,16 @@ public class LevelExitController : MonoBehaviour
 
     public void ExitLevelDefeat()
     {
-        Invoke(nameof(ActivateBlackScreen), 1.5f);
+        defeatEffect.Play("Defeat");
+        Invoke(nameof(ActivateBlackScreen), 3f);
         Invoke(nameof(ExitScene), 4f);
     }
 
     public void ExitLevelVictory()
     {
+        victoryEffect.Play("Victory");
         Invoke(nameof(ActivateBlackScreen), 3f);
-        Invoke(nameof(ExitScene), 5f);
+        Invoke(nameof(ExitScene), 4f);
     }
 
     private void ActivateBlackScreen()

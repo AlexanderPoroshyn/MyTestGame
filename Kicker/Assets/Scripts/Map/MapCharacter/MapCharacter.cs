@@ -1,9 +1,11 @@
 using UnityEngine;
 
+[RequireComponent(typeof(MapCharacterMover), typeof(MapCharacterSelector), typeof(MapCharacterAppearance))]
 public class MapCharacter : MonoBehaviour
 {
-    [SerializeField] private MapCharacterMover mapCharacterMover;
-    [SerializeField] private MapCharacterSelector mapCharacterSelector;
+    private MapCharacterMover mapCharacterMover => GetComponent<MapCharacterMover>();
+    private MapCharacterSelector mapCharacterSelector => GetComponent<MapCharacterSelector>();
+    private MapCharacterAppearance mapCharacterAppearance => GetComponent<MapCharacterAppearance>();
 
     private void Awake()
     {
@@ -18,11 +20,13 @@ public class MapCharacter : MonoBehaviour
     private void Moving()
     {
         mapCharacterSelector.enabled = false;
+        mapCharacterAppearance.StartAnimationMove();
     }
 
     private void StopMoving()
     {
         mapCharacterSelector.enabled = true;
+        mapCharacterAppearance.StartAnimationIdle();
 
         UpdateChecking();
     }

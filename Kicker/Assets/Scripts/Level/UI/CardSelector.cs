@@ -16,6 +16,8 @@ public class CardSelector : MonoBehaviour
 
     private bool isCardSelectorOn;
 
+    [SerializeField] private SpawnCellAlly[] spawnCellAllies;
+
     private void Awake()
     {
         for (int i = 0; i < cards.Length; i++)
@@ -52,11 +54,13 @@ public class CardSelector : MonoBehaviour
         {
             patternMove.sprite = selectedAlly.PatternMove;
             patternAttack.sprite = selectedAlly.PatternAttack;
+            UpdateViewSpawnCells(true);
         }
         else
         {
             patternMove.sprite = simpleSpritePatternMove;
             patternAttack.sprite = simpleSpritePatternAttack;
+            UpdateViewSpawnCells(false);
         }
     }
 
@@ -90,5 +94,13 @@ public class CardSelector : MonoBehaviour
         isCardSelectorOn = false;
         cardDimming.SetActive(true);
         Deselect();
+    }
+
+    private void UpdateViewSpawnCells(bool isCardSelected)
+    {
+        for (int i = 0; i < spawnCellAllies.Length; i++)
+        {
+            spawnCellAllies[i].UpdateView(isCardSelected);
+        }
     }
 }
